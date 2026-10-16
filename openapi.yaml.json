@@ -1,0 +1,50 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "利基战略顾问知识库",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://raw.githubusercontent.com/Xiaofan001016/mm-ljzlgw/main"
+    }
+  ],
+  "paths": {
+    "/Guide.md": {
+      "get": {
+        "operationId": "readGuide",
+        "summary": "知识库使用指南",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/NicheMarket.md": {
+      "get": {
+        "operationId": "readNicheMarket",
+        "summary": "利基市场知识图谱",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
